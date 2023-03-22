@@ -190,7 +190,6 @@ class ActionClientJointTrajectory(Node):
                     self.get_logger().info(f"Sending goal {self.goals[self.i]}.")
 
                     result_response = self.send_goal()
-                    FollowJointTrajectory_GetResult_Response
                     result = result_response.result
                     status = result_response.status
 
